@@ -42,9 +42,6 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
-
-
-
   }
 }
 
@@ -56,7 +53,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  font-size: 12px;
+  /* font-size: 12px; */
   margin: 0;
   font-family: Poppins;
 }
@@ -693,4 +690,28 @@ body {
       width: max-content;
       float: right;
   }
+}
+
+/* zoom effect */
+.zoom {
+  --zoom-x: 50%;
+  --zoom-y: 50%;
+  --zoom-show: none;
+
+  width: max-content;
+  position: relative;
+}
+
+.zoom img {
+  width: 500px;
+}
+.zoom img:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(1.8);
+
+  pointer-events: none;
+  clip-path: circle(100px at var(--zoom-x) var(--zoom-y));
+  display: var(--zoom-show)
 }

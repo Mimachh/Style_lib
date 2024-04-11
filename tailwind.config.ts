@@ -105,6 +105,12 @@ const config: Config = {
       width: {
         'radius-slider2': 'calc(var(--radius) * 2)',
       },
+      aspectRatio: {
+        card1: '0.71'
+      },
+      borderRadius: {
+        32: "2rem"
+      }
     },
   },
   plugins: [

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
+import SmoothScroll from "@/components/SmoothScroll";
 const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
@@ -26,7 +26,9 @@ export default function RootLayout({
         className={poppins.className}
       >
         <Navbar />
+        <SmoothScroll>
         {children}
+        </SmoothScroll>
       </body>
     </html>
   );
