@@ -6,6 +6,7 @@ interface Props {
   cardRef2: RefObject<HTMLElement>;
   mouseOnCard2: boolean;
 }
+// What i add is defs
 const Bolt = ({cursor2, cardRef2, mouseOnCard2}: Props) => {
     const [gradientCenter2, setGradientCenter2] = useState({
         cx: "50%",
