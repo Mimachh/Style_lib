@@ -32,7 +32,7 @@ const HoverCard1 = () => {
             <div className='flex flex-col gap-5'>
                 <Database className='w-14 h-14 rounded-lg bg-neutral-950/70 stroke-emerald-500 p-2 shadow-inner'/>
                 <h1 className='text-neutral-200 tracking-wide text-2xl'>Database</h1>
-                <p className='-mt-2 text-neutral-500 tracking-wide'>Passez la souris sur l'icone à droite pour voir l'effet.</p>
+                <p className='-mt-2 text-neutral-500 tracking-wide'>Passez la souris sur l&apos;icone à droite pour voir l&apos;effet.</p>
             </div>
             <div className='flex flex-col text-neutral-200 tracking-wide'>
                 <span className='flex flex-row gap-2'>
