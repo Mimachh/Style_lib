@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react"
 import Bolt from "./Bolt"
-import { CheckIcon, CircleStackIcon } from "@heroicons/react/24/outline"
+import { Check, Database } from "lucide-react"
 
 
 const CardBolt = () => {
@@ -34,21 +34,21 @@ const CardBolt = () => {
     >
         <div className='flex flex-col w-2/5 justify-between'>
             <div className='flex flex-col gap-5'>
-                <CircleStackIcon className='w-14 rounded-lg bg-neutral-950/70 stroke-[#f9a825] p-2 shadow-inner'/>
+                <Database className='w-14 h-14 rounded-lg bg-neutral-950/70 stroke-[#f9a825] p-2 shadow-inner'/>
                 <h1 className='text-neutral-200 tracking-wide text-2xl'>Database</h1>
                 <p className='-mt-2 text-neutral-500 tracking-wide'>Passez la souris sur l'icone à droite pour voir l'effet.</p>
             </div>
             <div className='flex flex-col text-neutral-200 tracking-wide'>
                 <span className='flex flex-row gap-2'>
-                    <CheckIcon className='w-5'/>
+                    <Check className='w-5'/>
                     <p>Blablabla</p>
                 </span>
                 <span className='flex flex-row gap-2'>
-                    <CheckIcon className='w-5'/>
+                    <Check className='w-5'/>
                     <p>Blablabla</p>
                 </span>
                 <span className='flex flex-row gap-2'>
-                    <CheckIcon className='w-5'/>
+                    <Check className='w-5'/>
                     <p>Blablabla</p>
                 </span>
             </div>
