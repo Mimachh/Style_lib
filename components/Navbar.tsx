@@ -3,24 +3,20 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <header className='relative container mx-auto px-4 h-20 flex flex-col items-center z-50'>
-          <Link href='/'>Accueil</Link>
-        <nav className='flex items-center gap-6 text-lg'>
-            <Link href='/sliders/1'>Slider 1</Link>
-            <Link href='/sliders/2'>Slider 2</Link>
-            <Link href='/sliders/3'>Slider 3</Link>
-        </nav>
-        <nav className='flex items-center gap-6 text-lg'>
-            <Link href='/cards/1'>Card 1</Link>
-        </nav>
+    <header className='relative container mx-auto px-4 h-20 flex items-center z-50'>
+          <nav className='flex items-center gap-4'>
+            <Link href='/'>Accueil</Link>
+              <Link href='/sliders/1'>Slider 1</Link>
+              <Link href='/sliders/2'>Slider 2</Link>
+              <Link href='/sliders/3'>Slider 3</Link>
 
-        <nav className='flex items-center gap-6 text-lg'>
-            <Link href='/effects/magnetic'>Magnetic effect</Link>
-        </nav>
+              <Link href='/cards/1'>Card</Link>
+              <Link href='/effects/magnetic'>Magnetic effect</Link>
+              <Link href='/effects/zoom'>Zoom effect</Link>
 
-        <nav className='flex items-center gap-6 text-lg'>
-            <Link href='/effects/zoom'>Zoom effect</Link>
-        </nav>
+              <Link href='/effects/parallax/1'>Parallax effect 1</Link>
+              <Link href='/effects/parallax/2'>Parallax effect 2</Link>
+          </nav>
 
         
     </header>
