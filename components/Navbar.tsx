@@ -18,6 +18,12 @@ export default function Navbar() {
               <Link href='/effects/parallax/2'>Parallax effect 2</Link>
 
               <Link href='/effects/hover/1'>Effet de survol 1</Link>
+
+              <Link href='/cursors/1'>Curseur 1</Link>
+
+              <Link href='/effects/border/1'>Border effect</Link>
+
+              <Link href='/effects/button/1'>Button effect</Link>
           </nav>
 
         

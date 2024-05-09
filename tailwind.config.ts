@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'garde': ['Avant Garde Book BT', 'sans-serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -40,6 +43,7 @@ const config: Config = {
         'outFrame': 'outFrame 0.5s linear 1 forwards',
         'contentOut': 'contentOut 1.5s linear 1 forwards',
         'circleRotate': 'circleRotate 20s linear infinite',
+        'border-1-spin': 'border-1-spin 7s linear infinite',
       },
       keyframes: {
         showContent: {
@@ -97,6 +101,11 @@ const config: Config = {
           to: {
               transform: 'translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg))',
           }
+        },
+        'border-1-spin': {
+          '100%': {
+            transform: 'rotate(-360deg)'
+          }
         }
       },
       rotate: {
@@ -112,6 +121,7 @@ const config: Config = {
         32: "2rem"
       }
     },
+    
   },
   plugins: [
 
