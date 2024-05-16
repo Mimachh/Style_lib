@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { slide, scale } from '../../animation';
 
-export default function Index({data, isActive, setSelectedIndicator}: {
+export default function index({data, isActive, setSelectedIndicator}: {
     data: {
         title: string,
         href: string,

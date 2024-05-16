@@ -6,7 +6,7 @@ const randomNumberBetween = (min: number, max: number) => {
 };
 
 type AnimationSequence = Parameters<typeof animate>[0];
-const page = () => {
+const Button2 = () => {
   const [scope, animate] = useAnimate();
 
   const onButtonClick = () => {
@@ -103,4 +103,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Button2;

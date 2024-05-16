@@ -3,13 +3,15 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import styles from './style.module.scss';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence } from 'framer-motion';
-import Nav from './nav';
+
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Rounded from '../Common/RoundedButton';
+import Rounded from '../Common/RoundedButton/Index';
 import Magnetic from '../Common/Magnetic';
+import Nav from './nav';
 
-export default function index() {
+
+export default function Header() {
 
     // https://www.youtube.com/watch?v=NOJCt7qyh9c
     const header = useRef(null);
@@ -29,6 +31,7 @@ export default function index() {
                 start: 0,
                 end: window.innerHeight,
                 onLeave: () => {gsap.to(button.current, {scale: 1, duration: 0.25, ease: "power1.out"})},
+                // @ts-ignore
                 onEnterBack: () => {gsap.to(button.current, {scale: 0, duration: 0.25, ease: "power1.out"},setIsActive(false))}
             }
         })

@@ -5,11 +5,11 @@ import { AnimatePresence } from "framer-motion";
 
 import Preloader from "./_components/Preloader";
 import Landing from "./_components/Landing";
-import Description from "./_components/Description";
-import Contact from "./_components/Contact";
+import Description from "./_components/Description/Index";
+import Contact from "./_components/Contact/Index";
 import Projects from "./_components/Projects";
+import Header from "./_components/Header/Index";
 import SlidingImages from "./_components/SlidingImages";
-import Header from "./_components/Header";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
