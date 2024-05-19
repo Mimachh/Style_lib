@@ -1,0 +1,94 @@
+
+.navbar.active {
+    transition: 0.75s height;
+    @apply bg-neutral-900 h-screen;
+
+    .navigation {
+        .burgerMenuContainer {
+            .burgerMenu {
+                @apply w-0 bg-white;
+                transition: 0.25s width ease-in-out,
+                    0.25s background-color ease-in-out;
+            }
+
+            .burgerMenu::after {
+                @apply bg-white translate-y-0 rotate-[135deg];
+                transition: 0.25s transform ease-in-out,
+                    0.25s background-color ease-in-out;
+            }
+
+            .burgerMenu::before {
+                @apply bg-white translate-y-0 rotate-[-135deg];
+                transition: 0.25s transform ease-in-out,
+                    0.25s background-color ease-in-out;
+            }
+
+            .burgerMenuTrigger:hover ~ .burgerMenu {
+                @apply w-0;
+            }
+        }
+    }
+    .content {
+        display: initial;
+    }
+}
+
+
+.navbar {
+    transition: 0.5s height;
+    @apply flex justify-start items-center w-full px-[10vw] bg-black h-0 absolute top-0 z-50 transition-all duration-1000;
+
+    .navigation {
+        @apply absolute top-0 mt-[7rem]  w-[calc(100%-20vw)] flex items-center justify-between;
+
+        .burgerMenuContainer {
+            @apply content-[''] w-[55px] h-[25px] relative right-0 cursor-pointer;
+
+            .burgerMenuTrigger {
+                @apply content-[‘’] w-[55px] h-[25px] relative right-0 cursor-pointer z-[100];
+            }
+
+            .burgerMenu {
+                transition: 0.25s width ease-in-out,
+                    0.5s background-color ease-in-out;
+                    top: calc(25px / 2 - 1.5px);
+                @apply content-[''] bg-white absolute w-[55px] h-[4px] z-0;
+            }
+
+            .burgerMenu::after {
+                transition: 0.25s transform ease-in-out,
+                    0.5s background-color ease-in-out;
+
+                @apply content-[''] bg-gray-600 absolute w-[55px] h-[4px] z-0 translate-y-[10px];
+            }
+
+            .burgerMenu::before {
+                transition: 0.25s transform ease-in-out,
+                    0.5s background-color ease-in-out;
+                @apply content-[''] bg-gray-700 absolute w-[55px] h-[4px] z-0 translate-y-[-10px];
+            }
+
+            .burgerMenuTrigger:hover ~ .burgerMenu {
+                @apply w-[35px];
+            }
+        }
+    }
+
+    .content {
+
+        @apply absolute top-[30vh] hidden;
+        ul {
+            @apply list-none;
+            li {
+                @apply py-[1rem];
+                a {
+                    @apply text-[3rem] text-white/80 transition-colors duration-300;
+                }
+
+                a:hover {
+                    @apply text-white/80 transition-colors duration-300;
+                }
+            }
+        }
+    }
+}

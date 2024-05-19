@@ -1,11 +1,40 @@
-import ListItem from "@/components/slider1/ListItem";
-import Navbar from "@/components/Navbar";
+"use client";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
+import { link } from "fs";
 
+const projects = [
+  {
+    title: "Sliders",
+    link: "/sliders",
+  },
+  {
+    title: "Cards",
+    link: "/cards",
+  },
+  {
+    title: "Borders",
+    link: "/border",
+  },
+  {
+    title: "Some effects (button, border, hover, magnetic...)",
+    link: "/effects",
+  },
+  {
+    title: "Cursor",
+    link: "/cursors",
+  },
+  {
+    title: "Navbar",
+    link: "/nav",
+  },
+];
 
-export default function Home() {
+const Home = () => {
   return (
-    <>
-        <h1></h1>
-    </>
+    <div className="max-w-5xl mx-auto px-8">
+      <HoverEffect items={projects} />
+    </div>
   );
-}
+};
+
+export default Home;

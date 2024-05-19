@@ -6,7 +6,7 @@ import Magnetic from "../Magnetic";
 
 
 
-export default function RoundedButton({
+const RoundedButton = ({
   children,
   backgroundColor = "#455CE9",
   ...attributes
@@ -14,7 +14,7 @@ export default function RoundedButton({
   children: any;
   backgroundColor?: string;
   [key: string]: any;
-}) {
+}) => {
   const circle = useRef<HTMLDivElement | null>(null);
   let timeline = useRef<gsap.core.Timeline | null>(null);
   let timeoutId: NodeJS.Timeout | null = null;
@@ -69,3 +69,5 @@ export default function RoundedButton({
     </Magnetic>
   );
 }
+
+export default RoundedButton;

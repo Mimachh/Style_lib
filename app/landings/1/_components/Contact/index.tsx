@@ -8,7 +8,7 @@ import Magnetic from '../Common/Magnetic';
 
 
 
-export default function Contact() {
+const Contact = () => {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
@@ -83,3 +83,5 @@ export default function Contact() {
         </motion.div>
     )
 }
+
+export default Contact
