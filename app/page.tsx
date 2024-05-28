@@ -27,6 +27,10 @@ const projects = [
     title: "Navbar",
     link: "/nav",
   },
+  {
+    title: "Scroll effect",
+    link: "/scroll",
+  }
 ];
 
 const Home = () => {
