@@ -6,7 +6,7 @@ import { opacity, slideUp } from './anim';
 
 const words = ["Hello", "Bonjour", "Ciao", "Olà", "やあ", "Hallå", "Guten tag", "Hallo"]
 
-export default function Index() {
+const Preloader = () => {
     const [index, setIndex] = useState(0);
     const [dimension, setDimension] = useState({width: 0, height:0});
 
@@ -48,3 +48,4 @@ export default function Index() {
         </motion.div>
     )
 }
+export default Preloader

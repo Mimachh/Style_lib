@@ -3,12 +3,13 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 
-import Preloader from "./_components/Preloader";
-import Landing from "./_components/Landing";
+
+import Landing from "./_components/Landing/Landing";
 import Description from "./_components/Description/Index";
 import Contact from "./_components/Contact/Index";
-import Projects from "./_components/Projects";
 import Header from "./_components/Header/Index";
+import Preloader from "./_components/Preloader";
+import Projects from "./_components/Projects";
 import SlidingImages from "./_components/SlidingImages";
 
 export default function Home() {

@@ -30,6 +30,18 @@ const projects = [
   {
     title: "Scroll effect",
     link: "/scroll",
+  },
+  {
+    title: "Landing",
+    link: "/landings"
+  },
+  {
+    title: "Page transition",
+    link: "/page_transition"
+  },
+  {
+    title: "Image",
+    link: "/images"
   }
 ];
 

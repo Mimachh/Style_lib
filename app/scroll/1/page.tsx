@@ -4,7 +4,7 @@ import Pic1 from '../../../public/images/scroll/1/1.jpg'
 import Pic2 from '../../../public/images/scroll/1/2.jpeg'
 
 import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 
 const Page = () => {

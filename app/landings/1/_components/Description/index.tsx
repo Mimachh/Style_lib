@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { slideUp, opacity } from './animation';
 import RoundedButton from '../Common/RoundedButton/Index';
 
-export default function Description() {
+const Description = () => {
 
     const phrase = "Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge.";
     const description = useRef(null);
@@ -29,3 +29,5 @@ export default function Description() {
         </div>
     )
 }
+
+export default Description

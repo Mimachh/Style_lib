@@ -11,7 +11,7 @@ import Magnetic from '../Common/Magnetic';
 import Nav from './nav';
 
 
-export default function Header() {
+const Header = () => {
 
     // https://www.youtube.com/watch?v=NOJCt7qyh9c
     const header = useRef(null);
@@ -80,3 +80,4 @@ export default function Header() {
         </>
     )
 }
+export default Header
