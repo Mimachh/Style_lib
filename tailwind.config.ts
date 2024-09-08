@@ -1,4 +1,39 @@
 import type { Config } from "tailwindcss";
+const plugin = require('tailwindcss/plugin')
+
+const rotateX = plugin(function ({ addUtilities }: any) {
+  addUtilities({
+    '.rotate-x-0': {
+      transform: 'rotateX(0deg)',
+    },
+    '.rotate-x-90': {
+      transform: 'rotateX(90deg)',
+    },
+    '.rotate-x-180': {
+      transform: 'rotateX(180deg)',
+    },
+    '.rotate-x-270': {
+      transform: 'rotateX(270deg)',
+    },
+  });
+})
+
+const rotateY = plugin(function ({ addUtilities }: any) {
+  addUtilities({
+    '.rotate-y-0': {
+      transform: 'rotateY(0deg)',
+    },
+    '.rotate-y-90': {
+      transform: 'rotateY(90deg)',
+    },
+    '.rotate-y-180': {
+      transform: 'rotateY(180deg)',
+    },
+    '.rotate-y-270': {
+      transform: 'rotateY(270deg)',
+    },
+  });
+})
 
 const config: Config = {
   content: [
@@ -124,7 +159,8 @@ const config: Config = {
     
   },
   plugins: [
-
+    rotateX,
+    rotateY
   ]
 };
 export default config;
